@@ -16,10 +16,14 @@ Flying Pumpkins screaming Halloween are ready for your Wordpress Site.
 
 Introduced by DesignWall, DW Halloween is a fun plugin that creates funky flying pumkins with a displayed message for your Wordpress site.
 The plugin is free, fast and easy to install and configure.
-	* Install and enable the plugin like any other plugins
-	* The plugin will create a custom post type Pumkins. 
-	* In the back-end, go to Dashboard > Pumkins add as many pumpkins as you want and set up your animation: text, speed, wing speed, animation path, image size, etc.
-	* Now, your site are ready for Halloween with scary pumpkins flying around.
+	
+* Install and enable the plugin like any other plugins
+	
+* The plugin will create a custom post type Pumkins. 
+	
+* In the back-end, go to Dashboard > Pumkins add as many pumpkins as you want and set up your animation: text, speed, wing speed, animation path, image size, etc.
+	
+* Now, your site are ready for Halloween with scary pumpkins flying around.
 
 A change of image and this plugin can be used for any purpose, any season.
 
