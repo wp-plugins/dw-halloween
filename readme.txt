@@ -31,7 +31,7 @@ A change of image and this plugin can be used for any purpose, any season.
 
  Happy Halloween!
 
-* DesignWall Team *
+* DesignWall Team http://www.designwall.com
 
 == Installation ==
 
