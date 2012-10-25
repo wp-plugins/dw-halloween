@@ -1,4 +1,4 @@
-=== DW HAllOWEEN ===
+=== DW Halloween ===
 Contributors: Designwall Team
 Donate link: http://designwall.com
 Tags: halloween, animation, scary, effects, pumpkin, event
@@ -54,5 +54,5 @@ A change of image and this plugin can be used for any purpose, any season.
 * No
 
 == Screenshots ==
-1. dw-halloween-frontend.jpg
-2. dw-halloween-backend.jpg
+1. screenshot.jpg
+2. screenshot-1.jpg
