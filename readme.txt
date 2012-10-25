@@ -1,4 +1,4 @@
-=== DW Shortcodes Bootstrap ===
+=== DW HAllOWEEN ===
 Contributors: Designwall Team
 Donate link: http://designwall.com
 Tags: halloween, animation, scary, effects, pumpkin, event
