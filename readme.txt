@@ -54,5 +54,5 @@ A change of image and this plugin can be used for any purpose, any season.
 * No
 
 == Screenshots ==
-1. screenshot.jpg
-2. screenshot-1.jpg
+1. screenshot-1.jpg
+2. screenshot-2.jpg
