@@ -85,7 +85,7 @@ function dw_halloween_animate_settings($post){
 			'close-type'	=>  1,
 			'preset'		=>	'100,100,1000,600,300,200',
 			'area'			=>	'100, 100, 1000, 600',
-			'class'			=>	''
+			'class'			=>	'dw-halloween'
 
 		) );
 	?>
@@ -279,7 +279,7 @@ function dw_halloween_display(){
 				'frame-start'	=>	0,
 				'closeable'		=> 	0,
 				'action'		=>	0,
-				'class'			=>	''
+				'class'			=>	'dw-halloween'
 
 			) );
 
