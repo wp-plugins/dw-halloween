@@ -1,5 +1,5 @@
 === DW Halloween ===
-Contributors: Designwall, rambu Team
+Contributors: Designwall Team, rambu 
 Donate link: http://designwall.com
 Tags: halloween, animation, scary, effects, pumpkin, event
 Requires at least: 3.0
