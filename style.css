@@ -1,0 +1,33 @@
+#pumpkin_settings .hide {
+	display:none;
+}
+
+#pumpkin_settings .active{
+	display: ;
+}
+
+#pumpkin_settings textarea {
+	width: 100% !important;
+	height: 120px;
+	min-height: 120px;
+}
+
+#pumpkin_settings .pumpkin-image label img {
+	padding: 8px;
+}
+
+#pumpkin_settings .pumpkin-image label.selected img {
+	border: 3px solid #ddd;
+	padding: 5px;
+}
+#pumpkin_settings .pumpkin-image .preview-container{
+	min-width: 250px;
+	min-height: 172px;
+	float: left;
+	margin-right: 10px;
+	background: white;
+	border-radius: 10px;
+}
+#pumpkin_settings .pumpkin-image .preview{
+	float: none;
+}
