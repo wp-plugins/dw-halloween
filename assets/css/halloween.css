@@ -33,12 +33,32 @@
   100% { opacity: 1.0; }
 }
 
-
 .jaanim {
   position: absolute;
   top: -999em;
   left: -999em;
   z-index: 9999;
+}
+
+@-webkit-keyframes batopacity {
+  0%   { opacity: 1.0; }
+  50%  { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+@-moz-keyframes batopacity {
+  0%   { opacity: 1.0; }
+  50%  { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+@-o-keyframes batopacity {
+  0%   { opacity: 1.0; }
+  50%  { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+@keyframes batopacity {
+  0%   { opacity: 1.0; }
+  50%  { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
 
 .tipwrap{
@@ -126,4 +146,8 @@
     position: absolute;
     text-indent: -9999px;
     width: 6px;
+}
+
+.dw-halloween {
+  opacity: 1;
 }

@@ -1,4 +1,4 @@
-;(function(){
+;(function($){
 	var nextFrame = (function() {
 		    return window.requestAnimationFrame
 				|| window.webkitRequestAnimationFrame
@@ -144,6 +144,9 @@
 			delaystart: 0,								//delay start - delay time before the animation start - optional 
 			framestart: 0,								//frame start - the frame start - optional
 			tip: 'Wish you a scary Halloween!',			//tooltip - can be HTML
+			effect: 1,								//on-off effect
+			fadetoggletime: 1000,					//fade toogle time
+			fadetime: 500,							//fade time of object
 			closable: true,							//show-hide close button
 			action: false								//action execute when click - should be a function
 		};
@@ -156,6 +159,15 @@
 
 		if(!def.image || !def.data || !def.data.length || cokie(def.id)) {
 			return;
+		}
+
+		var filename = def.image.split('/').pop();
+
+		if ( filename == 'Special_item_Bat_f1.gif') {
+			def.type = 'preset';
+			var batwidth = $(window).width() - def.width;
+			def.data = ['25','25', batwidth ,'25'];
+			def.duration = 2000;
 		}
 
 		if(def.type == 'random'){
@@ -175,14 +187,38 @@
 
 		var container = document.getElementById('page') || document.body,
 			anim = document.createElement('div'),
-			self = this;
+			self = this,
+            filename = def.image.split('/').pop();
 
 		anim.className = 'jaanim' + ' ' + def.cls;
+		anim.id = def.id;
 		anim.innerHTML = '<div class="inner">' +
 							'<div class="anim">&nbsp;</div>' +
 						'</div>';
 		anim.style.width = def.width + 'px';
 		anim.style.height = def.height + 'px';
+		if( def.effect == '1' ) {			
+			setInterval(function() {
+				$('#'+def.id).fadeToggle(def.fadetime) ;
+			} , def.fadetoggletime);
+		}
+
+		if ( filename == 'Special_item_Bat_f1.gif') {
+			self.freeze = false;            
+            anim.style.position = 'fixed';            
+			setInterval(function() {
+				$('#'+def.id).fadeToggle(2000) ;
+			} , 1000);
+        } else if ( filename == 'Special_item_Cat_f1.gif' ) {
+            self.freeze = true;
+            anim.style.position = 'fixed';
+            setInterval(function() {
+				$('#'+def.id).fadeToggle(5000) ;
+			} , 2000);
+        } else {
+        	self.freeze = false;
+        }
+
 		anim.style.backgroundImage = 'url(' + def.image + ')';
 		container.appendChild(anim);
 		this.anim = anim;
@@ -199,7 +235,7 @@
 			var tipwrap = document.createElement('div')
 			tipwrap.className = 'tipwrap';
 			tipwrap.appendChild(tip);
-			
+
 			if(def.closable){
 				var btndel = document.createElement('a');
 				btndel.innerHTML = 'delete';
@@ -247,7 +283,7 @@
 					}, 500);
 				}
 
-				self.freeze = false;
+				if ( filename != 'Special_item_Cat_f1.gif' ) self.freeze = false;
 				self.reset();
 			};
 
@@ -269,8 +305,20 @@
 			this.reset();
 			this.frame = this.def.framestart;
 			this.duration = this.def.delaystart;
-			this.x = this.xx = this.cx = random(0, viewport.width);
-			this.y = this.yy = this.cy = random(0, viewport.height);
+
+			filename = this.def.image.split('/').pop();
+
+			if ( filename == 'Special_item_Bat_f1.gif' )
+			{
+				this.x = this.xx = this.cx = 0;
+				this.y = this.yy = this.cy = 0;
+			} else if ( filename == 'Special_item_Cat_f1.gif' ) {
+				this.x = this.xx = this.cx = $(window).width() - this.def.width;
+				this.y = this.yy = this.cy = $(window).height() - this.def.height;
+			} else {
+				this.x = this.xx = this.cx = random(0, viewport.width);
+				this.y = this.yy = this.cy = random(0, viewport.height);
+			}
 		},
 
 		reset: function(){
@@ -339,6 +387,7 @@
 
 				this.flast = now;
 			}
+
 			this.render(now);
 		},
 
@@ -348,5 +397,5 @@
 			this.anim.style.backgroundPosition = '0 -' + (this.frame * this.def.height) + 'px';
 		}
 
-	};
-})();
+	};	
+})(jQuery);

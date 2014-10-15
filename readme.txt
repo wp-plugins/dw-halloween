@@ -1,10 +1,9 @@
 === DW Halloween ===
-Contributors: Designwall Team, rambu 
-Donate link: http://designwall.com
+Contributors: Designwall Team, rambu, YeonS 
+Donate link: http://www.designwall.com
 Tags: halloween, animation, scary, effects, pumpkin, event
-Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: 1.0
+Compatible Wordpress version: 4.0
+Stable tag: 1.1
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +44,12 @@ A change of image and this plugin can be used for any purpose, any season.
 
 = 1.0 =
 * First version out.
+
+= 1.1 =
+* You can add your custom image now.
+* Add new items and delete some old items.
+* Add fade effect for items.
+* Add Special item (Cat and Bat).
 
 
 == Frequently Asked Questions ==
